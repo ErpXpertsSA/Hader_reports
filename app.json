@@ -1,0 +1,26 @@
+{
+  "id": "5f2a0048-13e2-4c4f-a352-15a30dfa6622",
+  "name": "HADER_reports",
+  "publisher": "ERPXperts SA",
+  "version": "18.0.0.1",
+  "brief": "",
+  "description": "App for Hader's specific reports",
+  "privacyStatement": "",
+  "EULA": "http://wwww.erpxperts.ch",
+  "help": "http://wwww.erpxperts.ch",
+  "url": "http://wwww.erpxperts.ch",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 50180,
+      "to": 50199
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://Hader_reports.com/help/",
+  "showMyCode": true,
+  "runtime": "7.0"
+}
