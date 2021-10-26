@@ -6955,33 +6955,33 @@
                                   <TablixMember />
                                   <TablixMember>
                                     <Visibility>
-                                      <Hidden>=Last(Fields!TotalInvoiceDiscountAmount.Value) = 0</Hidden>
+                                      <Hidden>=Last(Fields!TotalInvDiscAmount.Value) = 0</Hidden>
                                     </Visibility>
                                   </TablixMember>
                                   <TablixMember>
                                     <Visibility>
-                                      <Hidden>=(Last(Fields!TotalInvoiceDiscountAmount.Value) = 0) Or (Fields!PricesIncludingVAT.Value = True)</Hidden>
+                                      <Hidden>=(Last(Fields!TotalInvDiscAmount.Value) = 0) Or (Fields!PricesIncludingVAT.Value = True)</Hidden>
                                     </Visibility>
                                   </TablixMember>
                                   <TablixMember>
                                     <Visibility>
-                                      <Hidden>=(Last(Fields!TotalVATAmount.Value) = 0) Or (Fields!PricesIncludingVAT.Value = True)</Hidden>
+                                      <Hidden>=(Last(Fields!TotalAmountVAT.Value) = 0) Or (Fields!PricesIncludingVAT.Value = True)</Hidden>
                                     </Visibility>
                                   </TablixMember>
                                   <TablixMember />
                                   <TablixMember>
                                     <Visibility>
-                                      <Hidden>=(LAST(Fields!TotalVATAmount.Value) = 0) OR (Fields!PricesIncludingVAT.Value = FALSE)</Hidden>
+                                      <Hidden>=(LAST(Fields!TotalVATAmount.Value) = "0") OR (Fields!PricesIncludingVAT.Value = FALSE)</Hidden>
                                     </Visibility>
                                   </TablixMember>
                                   <TablixMember>
                                     <Visibility>
-                                      <Hidden>=(Last(Fields!TotalVATAmount.Value) = 0) Or (Fields!PricesIncludingVAT.Value = False)</Hidden>
+                                      <Hidden>=(Last(Fields!TotalAmountVAT.Value) = 0) Or (Fields!PricesIncludingVAT.Value = False)</Hidden>
                                     </Visibility>
                                   </TablixMember>
                                   <TablixMember>
                                     <Visibility>
-                                      <Hidden>=(Last(Fields!TotalVATAmount.Value) = 0) Or (Fields!PricesIncludingVAT.Value = False)</Hidden>
+                                      <Hidden>=(Last(Fields!TotalAmountVAT.Value) = 0) Or (Fields!PricesIncludingVAT.Value = False)</Hidden>
                                     </Visibility>
                                   </TablixMember>
                                 </TablixMembers>
@@ -7997,7 +7997,6 @@
                 </Textbox>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
-              <Top>0cm</Top>
               <Height>2.32836cm</Height>
               <Width>18.60749cm</Width>
               <Style>
@@ -8860,6 +8859,18 @@ End Function
         </Field>
         <Field Name="TotalAmountIncludingVAT">
           <DataField>TotalAmountIncludingVAT</DataField>
+        </Field>
+        <Field Name="TotalAmountVAT">
+          <DataField>TotalAmountVAT</DataField>
+        </Field>
+        <Field Name="TotalAmountVATFormat">
+          <DataField>TotalAmountVATFormat</DataField>
+        </Field>
+        <Field Name="TotalInvDiscAmount">
+          <DataField>TotalInvDiscAmount</DataField>
+        </Field>
+        <Field Name="TotalInvDiscAmountFormat">
+          <DataField>TotalInvDiscAmountFormat</DataField>
         </Field>
         <Field Name="TotalVATAmount">
           <DataField>TotalVATAmount</DataField>

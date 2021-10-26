@@ -1045,6 +1045,10 @@ report 50180 "Hader Standard Sales - Invoice"
                 column(TotalAmountIncludingVAT; Format(TotalAmountInclVAT, 0, AutoFormat.ResolveAutoFormat("Auto Format"::AmountFormat, Header."Currency Code")))
                 {
                 }
+                column(TotalAmountVAT; TotalAmountVAT)
+                { }
+                column(TotalInvDiscAmount; TotalInvDiscAmount)
+                { }
                 column(TotalVATAmount; Format(TotalAmountVAT, 0, AutoFormat.ResolveAutoFormat("Auto Format"::AmountFormat, Header."Currency Code")))
                 {
                 }
